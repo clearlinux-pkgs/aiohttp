@@ -4,7 +4,7 @@
 #
 Name     : aiohttp
 Version  : 3.4.0
-Release  : 2
+Release  : 3
 URL      : https://files.pythonhosted.org/packages/09/01/22c9b713b195d071b73fdc2f977f8717497b0d30c41c0b4a9cd908b925ec/aiohttp-3.4.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/09/01/22c9b713b195d071b73fdc2f977f8717497b0d30c41c0b4a9cd908b925ec/aiohttp-3.4.0.tar.gz
 Summary  : Async http client/server framework (asyncio)
