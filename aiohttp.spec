@@ -4,7 +4,7 @@
 #
 Name     : aiohttp
 Version  : 3.6.3
-Release  : 20
+Release  : 21
 URL      : https://files.pythonhosted.org/packages/9d/6c/429faa2d2f73973189ca0cfe141ff703417a5eebe18d78e6b25b70db0a34/aiohttp-3.6.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9d/6c/429faa2d2f73973189ca0cfe141ff703417a5eebe18d78e6b25b70db0a34/aiohttp-3.6.3.tar.gz
 Summary  : Async http client/server framework (asyncio)
@@ -30,6 +30,7 @@ BuildRequires : idna-ssl
 BuildRequires : multidict
 BuildRequires : typing_extensions
 BuildRequires : yarl
+Patch1: deps.patch
 
 %description
 Async http client/server framework
@@ -70,13 +71,14 @@ python3 components for the aiohttp package.
 %prep
 %setup -q -n aiohttp-3.6.3
 cd %{_builddir}/aiohttp-3.6.3
+%patch1 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1602522288
+export SOURCE_DATE_EPOCH=1602523864
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
