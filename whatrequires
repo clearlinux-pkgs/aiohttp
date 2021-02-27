@@ -1,6 +1,5 @@
 # This file contains recursive sources that require this package
 aiohttp-cors
-azure-appconfiguration
 black
 eternalegypt
 home-assistant
