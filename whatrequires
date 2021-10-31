@@ -1,6 +1,9 @@
 # This file contains recursive sources that require this package
 aiohttp-cors
 black
+complete
 eternalegypt
+fsspec
+google-auth
 home-assistant
 msrest
